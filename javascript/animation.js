@@ -1,3 +1,9 @@
+// https://github.com/shiven-nayee/scrolling_stars
+// Idea from: https://codepen.io/saransh/pen/BKJun?editors=0100
+
+// Counts the number of stars once it generates 100 stars it removes the interval
+// The top determines how far the stars can go before the animation resets
+// The left is randomly chosen so the star is added randomly on the screen
 var num1 = 0;
 function makeSmallStars() {
   let star = $('<div>').addClass('smallStar');
