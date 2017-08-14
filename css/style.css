@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+}
+
+.space {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+}
+
+.smallStar {
+  position: absolute;
+  top: 95%;
+  left: 200px;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  animation: fall 10s linear infinite;
+}
+
+.mediumStar {
+  position: absolute;
+  top: 95%;
+  left: 300px;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  animation: fall 20s linear infinite;
+}
+
+.largeStar {
+  position: absolute;
+  top: 95%;
+  left: 400px;
+  width: 3px;
+  height: 3px;
+  background-color: white;
+  animation: fall 30s linear infinite;
+}
+
+
+
+@keyframes fall {
+  from {
+    top: 0;
+  }
+  to {
+    top: 2000;
+  }
+}
