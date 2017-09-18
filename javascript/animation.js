@@ -4,13 +4,18 @@
 // Counts the number of stars once it generates 100 stars it removes the interval
 // The top determines how far the stars can go before the animation resets
 // The left is randomly chosen so the star is added randomly on the screen
+
+// Different Parameters:
+// * Small/Medium/Large Star Size
+// * Number of stars generated
 var num1 = 0;
 function makeSmallStars() {
   let star = $('<div>').addClass('smallStar');
   star.appendTo($('.space'));
   const randomNum = Math.floor(Math.random() * $(window).outerWidth());
+  const randomNum2 = Math.floor(Math.random() * $(window).outerHeight());
   // const randomNum = Math.floor(Math.random() * 1000);
-  const coordinates = { top: 700, left: randomNum };
+  const coordinates = { top: randomNum2, left: randomNum };
   star.offset(coordinates);
   num1 += 1;
   if(num1 > 100) {
@@ -24,8 +29,9 @@ function makeMediumStars() {
   let star = $('<div>').addClass('mediumStar');
   star.appendTo($('.space'));
   const randomNum = Math.floor(Math.random() * $(window).outerWidth());
+  const randomNum2 = Math.floor(Math.random() * $(window).outerHeight());
   // const randomNum = Math.floor(Math.random() * 1000);
-  const coordinates = { top: 700, left: randomNum };
+  const coordinates = { top: randomNum2, left: randomNum };
   star.offset(coordinates);
   num2 += 1;
   if(num2 > 75) {
@@ -39,8 +45,9 @@ function makeLargeStars() {
   let star = $('<div>').addClass('largeStar');
   star.appendTo($('.space'));
   const randomNum = Math.floor(Math.random() * $(window).outerWidth());
+  const randomNum2 = Math.floor(Math.random() * $(window).outerHeight());
   // const randomNum = Math.floor(Math.random() * 1000);
-  const coordinates = { top: 700, left: randomNum };
+  const coordinates = { top: randomNum2, left: randomNum };
   star.offset(coordinates);
   num3 += 1;
   if(num3 > 50) {
