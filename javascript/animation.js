@@ -8,7 +8,7 @@ var num1 = 0;
 function makeSmallStars() {
   let star = $('<div>').addClass('smallStar');
   star.appendTo($('.space'));
-  const randomNum = Math.floor(Math.random() * 1000);
+  const randomNum = Math.floor(Math.random() * $(window).outerWidth());
   // const randomNum = Math.floor(Math.random() * 1000);
   const coordinates = { top: 700, left: randomNum };
   star.offset(coordinates);
@@ -23,7 +23,7 @@ var num2 = 0;
 function makeMediumStars() {
   let star = $('<div>').addClass('mediumStar');
   star.appendTo($('.space'));
-  const randomNum = Math.floor(Math.random() * 1500);
+  const randomNum = Math.floor(Math.random() * $(window).outerWidth());
   // const randomNum = Math.floor(Math.random() * 1000);
   const coordinates = { top: 700, left: randomNum };
   star.offset(coordinates);
@@ -38,7 +38,7 @@ var num3 = 0;
 function makeLargeStars() {
   let star = $('<div>').addClass('largeStar');
   star.appendTo($('.space'));
-  const randomNum = Math.floor(Math.random() * 1000);
+  const randomNum = Math.floor(Math.random() * $(window).outerWidth());
   // const randomNum = Math.floor(Math.random() * 1000);
   const coordinates = { top: 700, left: randomNum };
   star.offset(coordinates);
