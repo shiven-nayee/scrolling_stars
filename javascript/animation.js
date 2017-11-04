@@ -49,6 +49,22 @@ function makeLargeStars() {
   }
 }
 
+$('.winter').click(function() {
+  console.log('clicked');
+  $(".space").css({"background-image": "linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)"});
+  $(".smallStar").css({"border": "1px transparent solid", "border-radius": "100%"});
+  $(".mediumStar").css({"border": "1px transparent solid", "border-radius": "100%"});
+  $(".largeStar").css({"border": "1px transparent solid", "border-radius": "100%"});
+});
+
+$('.original').click(function() {
+  console.log('clicked');
+  $(".space").css({"background": "radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)"});
+  $(".smallStar").css({"border": "none"});
+  $(".mediumStar").css({"border": "none"});
+  $(".largeStar").css({"border": "none"});
+});
+
 var smallStars = setInterval(makeSmallStars, 500);
 var mediumStars = setInterval(makeMediumStars, 500);
 var largeStars = setInterval(makeLargeStars, 500);

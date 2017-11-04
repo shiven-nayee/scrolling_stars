@@ -2,6 +2,11 @@ html {
   height: 100%;
 }
 
+button {
+  padding: 5px;
+  margin: 5px;
+}
+
 .space {
   position: absolute;
   height: 100%;
@@ -38,8 +43,6 @@ html {
   background-color: white;
   animation: fall 30s linear infinite;
 }
-
-
 
 @keyframes fall {
   from {
